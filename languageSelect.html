@@ -6,7 +6,9 @@
         <script>
             function clickOutputType() {
                 var type = loaclStorage.getItem("outputType");
-                document.getElementById("outputType").innerHTML = type;
+                if (type != null) {
+                    document.body.style.background = "green";
+                }
 
             }
             function clickGoBack() {
