@@ -13,11 +13,11 @@
                 }
             }
             function clickText() {
-                localStorage.outputType = "Text";
+                localStorage.setItem("outputType", "Text");
                 window.location.replace("languageSelect.html");
             }
             function clickAudio() {
-                localStorage.outputType = "Audio";
+                localStorage.setItem("outputType", "Audio");
                 window.location.replace("languageSelect.html");
             }
         </script>
