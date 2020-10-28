@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Language Select</title>
+        <script>
+            function clickOutputType() {
+                var type = sessionStorage.getItem("outputType");
+                document.getElementById("outputType").innerHTML = type;
+
+            }
+            function clickGoBack() {
+                localStorage.removeItem("outputType");
+                window.location.replace("landingPage.html");
+            }
+        </script>
+    </head>
+    <body>
+        <h1></b>Select a Language</b></h1>
+        <p><button onclick="clickOutputType()" type="button">What outputType?</button></p>
+        <p id="outputType"></p>
+        <p><button onclick="clickGoBack()" type="button">Go back</button></p>
+    </body>
+</html>

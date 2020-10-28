@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <title>Morisset-library-finding</title>
+        <script>
+            function redirectToLanguage() {
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.outputType != null) {
+                        window.location.replace("languageSelect.html");
+                    }
+                }
+            }
+            function clickText() {
+                localStorage.outputType = "Text";
+                window.location.replace("languageSelect.html");
+            }
+            function clickAudio() {
+                localStorage.outputType = "Audio";
+                window.location.replace("languageSelect.html");
+            }
+        </script>
+    </head>
+    <body>
+        <h1></b>Select an Output Type:</b></h1>
+        <p><button onclick="clickText()" type="button">Text Direction</button></p>
+        <p><button onclick="clickAudio()" type="button">Audio Direction</button></p>
+    </body>
+</html>
